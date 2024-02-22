@@ -67,6 +67,7 @@ function Contexts({ children }) {
     ).then((res) => setSearchRes(res.data.results));
   }
   // aziret xaxaxax
+  //aziret push commit
   console.log();
   let values = {
     card,
