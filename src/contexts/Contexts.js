@@ -66,6 +66,7 @@ function Contexts({ children }) {
       `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${name}`
     ).then((res) => setSearchRes(res.data.results));
   }
+  // aziret xaxaxax
   console.log();
   let values = {
     card,
