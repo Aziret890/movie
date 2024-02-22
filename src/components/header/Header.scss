@@ -1,0 +1,32 @@
+.header {
+  margin-top: 5pc;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__title {
+    font-size: 58px;
+    color: #fff;
+  }
+  &__ganre {
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      li {
+        list-style: none;
+        font-size: 24px;
+        color: #fff;
+        transition: 0.2s ease-in-out;
+      }
+      li:hover {
+        list-style: none;
+        font-size: 26px;
+        color: #3f5c9b;
+        transition: 0.3s ease-in-out;
+      }
+    }
+  }
+}

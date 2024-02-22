@@ -1,0 +1,23 @@
+.hero {
+  margin-top: 3pc;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo {
+    color: #ffffff;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  &__li {
+    list-style: none;
+    & a {
+      color: #ffffff;
+    }
+  }
+}

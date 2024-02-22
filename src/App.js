@@ -1,23 +1,64 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  useParams,
+} from "react-router-dom";
+import Home from "./pages/Home";
+import SideBarPages from "./pages/SideBarPages";
+import Popular1 from "./pages/Popular";
+import ActorInfo from "./pages/ActorInfo";
+import Search from "../src/components/search/Search";
+import Hero from "./components/hero/Hero";
+import SearchMather from "./components/search/SearchMather";
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: (
+        <>
+          <Home />
+        </>
+      ),
+    },
+    {
+      path: "/movieCard/:Id",
+      element: (
+        <>
+          <SideBarPages />
+        </>
+      ),
+    },
+    {
+      path: "/moviePopular",
+      element: (
+        <>
+          <Popular1 />
+        </>
+      ),
+    },
+    {
+      path: "/movieCard/actor/:id",
+      element: (
+        <>
+          <ActorInfo />
+        </>
+      ),
+    },
+    {
+      path: "/search",
+      element: (
+        <>
+          <Hero />
+          <SearchMather />
+        </>
+      ),
+    },
+  ]);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <RouterProvider router={router} />
     </div>
   );
 }

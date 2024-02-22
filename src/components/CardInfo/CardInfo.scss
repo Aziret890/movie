@@ -1,0 +1,62 @@
+.cardInfo {
+  color: rgb(186, 200, 212);
+
+  margin-top: 2.5pc;
+  &Content {
+    padding-top: 4pc;
+    display: flex;
+    justify-content: space-between;
+    gap: 4pc;
+    align-items: center;
+  }
+  &Info {
+    p {
+      font-size: 20px;
+      max-width: 85%;
+    }
+    ul {
+      display: flex;
+      gap: 20px;
+      justify-content: start;
+      li {
+        list-style: none;
+        color: rgb(66, 109, 146);
+        font-size: 20px;
+      }
+    }
+    .ball {
+      width: 200px;
+      height: 60px;
+      border: 1px solid #000;
+
+      position: relative;
+      .point {
+        p {
+          margin: 0;
+          position: absolute;
+          left: 28%;
+          top: 26%;
+          color: aqua;
+        }
+        height: 100%;
+      }
+    }
+  }
+}
+.cardActor {
+  margin-top: 5pc;
+  margin-bottom: 4pc;
+}
+
+.cardWero {
+  display: flex;
+  overflow-y: scroll;
+  gap: 5pc;
+  align-items: center;
+  max-width: 1540px;
+  justify-content: center;
+  margin: 0 auto;
+}
+.cardWero::-webkit-scrollbar {
+  display: none;
+}

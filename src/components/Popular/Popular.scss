@@ -1,0 +1,49 @@
+.popular {
+  margin-top: 7pc;
+  &Grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  &Block {
+    width: 360px;
+    height: 540px;
+    -webkit-box-shadow: 3px 2px 20px 6px rgba(60, 77, 107, 0.19);
+    -moz-box-shadow: 3px 2px 20px 6px rgba(60, 77, 107, 0.19);
+    box-shadow: 3px 2px 20px 6px rgba(60, 77, 107, 0.19);
+    transition: 0.3s;
+  }
+  &Block:hover {
+    width: 360px;
+    height: 540px;
+    transition: 0.3s;
+    -webkit-box-shadow: 3px 2px 20px 16px rgba(73, 97, 146, 0.19);
+    -moz-box-shadow: 3px 2px 20px 16px rgba(73, 97, 146, 0.19);
+    box-shadow: 3px 2px 20px 16px rgba(73, 97, 146, 0.19);
+    .popular__1__img {
+      transition: 0.2s ease-in-out;
+      opacity: 0.6;
+    }
+  }
+  .popular__1 {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    &__img {
+      width: 330px;
+      height: 450px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .popular__2 {
+    h1 {
+      color: #fff;
+      font-size: 24px;
+      text-align: center;
+    }
+  }
+}
